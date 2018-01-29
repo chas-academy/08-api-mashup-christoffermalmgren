@@ -1,0 +1,136 @@
+/*
+** <Reset>
+*/
+@import 'reset';
+
+/*
+** <Global Utilities>
+*/
+@import 'utilities/layout';
+
+body {
+  background-color: #fff;
+  color: #fff;
+  font-family: 'Avenir Next', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5em;
+}
+
+#mashed {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: slategray;
+  height: 90px;
+  @include flex-center;
+}
+
+main {
+  display: flex;
+  position: relative;
+  margin: 30px;
+}
+
+aside {
+  color: slategray;
+  border: 3px solid slategray;
+  border-left: none;
+  flex: 1;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    li {
+      display: flex;
+      justify-content: center;
+      line-height: 90px;
+      border-bottom: 1px solid slategray;
+
+      a {
+        width: 100%;
+        text-align: center;
+      }
+
+      &:hover {
+        background-color: slategray;
+        a {
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.search {
+  border: 3px solid slategray;
+  color: slategray;
+  min-height: 90px;
+  line-height: 90px;
+  position: relative;
+  margin: 30px 30px 0px 30px;
+
+  input {
+    width: calc(100% - 249px);
+    height: 90px;
+    text-indent: 30px;
+    &::-webkit-input-placeholder {
+      color: lighten(slategray, 30%);
+    }
+  }
+
+  button {
+    -webkit-appearance: none;
+    background-color: slategray;
+    color: #fff;
+    height: 100%;
+    position: absolute;
+    width: 250px;
+    right: -1px;
+    top: 0;
+
+    &:hover {
+      background-color: lighten(slategray, 10%);
+    }
+  }
+}
+
+.results {
+  border: 3px solid slategray;
+  padding: 10px;
+  flex: 2;
+
+  ul {
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    color: #fff;
+    font-size: 2.0em;
+    font-family: 'AvenirNext-Bold';
+    min-height: 350px;
+    width: 100%;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: lighten(slategray, 10%);
+    }
+  }
+}
+
+footer {
+  background-color: slategray;
+  height: 250px;
+  @include flex-center;
+}
