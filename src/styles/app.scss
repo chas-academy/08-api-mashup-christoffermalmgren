@@ -47,6 +47,7 @@ aside {
       justify-content: center;
       line-height: 90px;
       border-bottom: 1px solid slategray;
+      
 
       a {
         width: 100%;
@@ -118,6 +119,10 @@ aside {
     min-height: 350px;
     width: 100%;
     margin-bottom: 10px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 
     &:last-child {
       margin-bottom: 0;

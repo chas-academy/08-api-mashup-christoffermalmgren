@@ -1,7 +1,7 @@
 {
   "name": "api-mashup",
   "version": "1.0.0",
-  "main": "./src/app.js",
+  "main": "./src/try.js",
   "license": "Nope",
   "scripts": {
     "start": "webpack-dev-server --open",

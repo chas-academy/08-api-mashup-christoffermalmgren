@@ -6,7 +6,7 @@ const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: {
-    app: ['./src/app.js']
+    app: ['./src/try.js']
   },
   devtool: 'cheap-module-source-map',
   devServer: {
